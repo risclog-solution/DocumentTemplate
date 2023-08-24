@@ -840,6 +840,8 @@ class InClass:
                             k = k()
                         except Exception:
                             k = _Smallest
+                    if k is None:
+                        k = _Smallest
 
             s.append((k, client))
 
